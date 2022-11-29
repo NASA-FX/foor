@@ -1,0 +1,131 @@
+<html>
+<head>
+
+<script>
+
+function calculateMea(){
+
+var a = document.getElementById("inOn").value; 
+var b = document.getElementById("inTw").value;
+document.getElementById("Ou").value = parseFloat (a)* parseFloat (b);
+
+var a = document.getElementById("inOne").value; 
+var b = document.getElementById("inTwo").value;
+document.getElementById("Out").value = parseFloat (a)/ parseFloat (b);
+
+
+}
+
+
+</script>
+
+<style>
+.outter {
+border-radius: 20px;
+border: 2px solid red;
+padding: 20px;
+
+}
+
+.top{
+background: #FA8CE3 ;
+}
+
+.field{
+border-radius: 5px;
+}
+
+.btn{
+background: #AD47EB ;
+border-radius: 7px;
+padding:5px;
+width:100px;
+
+}
+
+.oneBorder{
+border-bottom-style: solid;
+border-width: 2px;
+color: #26F2DE ;
+}
+
+.twoBorder{
+border-top-style: solid;
+border-width: 2px;
+color: #26F2DE ;
+}
+</style>
+
+</head>
+
+<body>
+<table class="outter">
+
+<tr>
+
+<td class="top" align=center>
+
+BUYEURO
+
+<br>
+
+<input type="text" id="inOn" class="field">
+
+</td>
+
+</tr>
+
+<tr> 
+
+<td class="top" align=center>
+
+SELLEURO 
+<br>
+
+<input type="text" id="inOne" class="field">
+
+</tr>
+
+</td>
+
+</tr>
+
+<tr>
+<td class=oneBorder>
+&nbsp; 
+</td>
+
+</tr>
+
+<tr>
+<td>
+<input type="text" id="inTw"> RUB= <input type="text" id="Ou"> EUR 
+</td>
+</tr>
+
+<tr>
+
+<td>
+<input type="text" id="inTwo"> EUR= <input type="text" id="Out"> RUB
+</td>
+
+</tr>
+
+<tr>
+<td class=twoBorder>
+&nbsp; 
+</td>
+
+</tr>
+
+<tr>
+
+<td align=center>
+<button onclick="calculateMea()" class="btn">PUSH ME</button> 
+</td>
+
+</tr>
+
+</table>
+</body>
+</html>
